@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2429EF2B-2005-4E2F-8264-2D0A455C66FA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>cps3_pkcs11</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)_w32</TargetName>
+    <OutDir>$(SolutionDir)$(Configuration)\$(PlatformTarget)\</OutDir>
+    <IntDir>$(Configuration)\$(PlatformTarget)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)_w64</TargetName>
+    <OutDir>$(SolutionDir)$(Configuration)\$(PlatformTarget)\</OutDir>
+    <IntDir>$(Configuration)\$(PlatformTarget)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>$(ProjectName)_w32</TargetName>
+    <OutDir>$(SolutionDir)$(Configuration)\$(PlatformTarget)\</OutDir>
+    <IntDir>$(Configuration)\$(PlatformTarget)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>$(ProjectName)_w64</TargetName>
+    <OutDir>$(SolutionDir)$(Configuration)\$(PlatformTarget)\</OutDir>
+    <IntDir>$(Configuration)\$(PlatformTarget)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WINDOWS_IGNORE_PACKING_MISMATCH;WIN32;_DEBUG;_WINDOWS;_USRDLL;HAVE_CONFIG_H;_WIN32_WINNT=0x0400;MODULE_IAS;ENABLE_OPENSSL;_CRT_SECURE_NO_DEPRECATE;PKCS11_THREAD_LOCKING;ENABLE_GALSS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\src;..\src\common;..\..\openssl\include;..\..\openssl\include_win32;..\src\pkcs11;.\src;..\src\libopensc;..\..\..\common\win32\src;..\..\..\common;..\src\base64;..\src\jni\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>..\..\openssl\lib_win32\release\libeay32.lib;Ws2_32.lib;wtsapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>src</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>rem copy $(TargetPath) D:\svn_projets\ASIP\cps3\opensc\test\$(Platform)\$(Configuration)\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WINDOWS_IGNORE_PACKING_MISMATCH;WIN32;_DEBUG;_WINDOWS;_USRDLL;HAVE_CONFIG_H;_WIN32_WINNT=0x0400;MODULE_IAS;ENABLE_OPENSSL;ENABLE_GALSS;_CRT_SECURE_NO_DEPRECATE;PKCS11_THREAD_LOCKING;_WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\src;..\src\common;..\..\openssl\include;..\..\openssl\include_win32;..\src\pkcs11;.\src;..\src\libopensc;..\..\..\common\win32\src;..\..\..\common;..\src\base64;..\src\jni\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StructMemberAlignment>1Byte</StructMemberAlignment>
+      <BrowseInformation>true</BrowseInformation>
+      <ShowIncludes>
+      </ShowIncludes>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>..\..\openssl\lib_win64\libeay32.lib;Ws2_32.lib;wtsapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>NotSet</ShowProgress>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>src</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_WIN64</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WINDOWS_IGNORE_PACKING_MISMATCH;WIN32;NDEBUG;_WINDOWS;_USRDLL;HAVE_CONFIG_H;_WIN32_WINNT=0x0400;MODULE_IAS;ENABLE_OPENSSL;_CRT_SECURE_NO_DEPRECATE;PKCS11_THREAD_LOCKING;ENABLE_GALSS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>..\src;..\src\common;..\..\openssl\include;..\..\openssl\include_win32;..\src\pkcs11;.\src;..\src\libopensc;..\..\..\common\win32\src;..\..\..\common;..\src\base64;..\src\jni\include</AdditionalIncludeDirectories>
+      <ExpandAttributedSource>true</ExpandAttributedSource>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>..\..\openssl\lib_win32\release\libeay32.lib;Ws2_32.lib;wtsapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>src</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>rem copy $(TargetPath) $(SystemRoot)\Syswow64\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WINDOWS_IGNORE_PACKING_MISMATCH;WIN32;NDEBUG;_WINDOWS;_USRDLL;HAVE_CONFIG_H;_WIN32_WINNT=0x0400;MODULE_IAS;ENABLE_OPENSSL;ENABLE_GALSS;_CRT_SECURE_NO_DEPRECATE;PKCS11_THREAD_LOCKING;_WIN64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\src;..\src\common;..\..\openssl\include;..\..\openssl\include_win32;..\src\pkcs11;.\src;..\src\libopensc;..\..\..\common\win32\src;..\..\..\common;..\src\base64;..\src\jni\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <StructMemberAlignment>1Byte</StructMemberAlignment>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>..\..\openssl\lib_win64\libeay32.lib;Ws2_32.lib;wtsapi32.lib;libvcruntime.lib;legacy_stdio_definitions.lib;legacy_stdio_wide_specifiers.lib;libconcrt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>libc;libcmtd;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>src</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN64</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\common\sys_config.c" />
+    <ClCompile Include="..\src\common\compat_strlcpy.c" />
+    <ClCompile Include="..\src\libopensc\apdu.c" />
+    <ClCompile Include="..\src\libopensc\asn1.c" />
+    <ClCompile Include="..\src\libopensc\card-cps.c" />
+    <ClCompile Include="..\src\libopensc\card-cps3.c" />
+    <ClCompile Include="..\src\libopensc\card-cps4.c" />
+    <ClCompile Include="..\src\libopensc\card.c" />
+    <ClCompile Include="..\src\libopensc\ctx.c" />
+    <ClCompile Include="..\src\libopensc\dir.c" />
+    <ClCompile Include="..\src\libopensc\encdec.c" />
+    <ClCompile Include="..\src\libopensc\errors.c" />
+    <ClCompile Include="..\src\libopensc\iso7816.c" />
+    <ClCompile Include="..\src\libopensc\log.c" />
+    <ClCompile Include="..\src\libopensc\padding.c" />
+    <ClCompile Include="..\src\libopensc\pkcs15-algo.c" />
+    <ClCompile Include="..\src\libopensc\pkcs15-cache.c" />
+    <ClCompile Include="..\src\libopensc\pkcs15-cert.c" />
+    <ClCompile Include="..\src\libopensc\pkcs15-data.c" />
+    <ClCompile Include="..\src\libopensc\pkcs15-pin.c" />
+    <ClCompile Include="..\src\libopensc\pkcs15-prkey.c" />
+    <ClCompile Include="..\src\libopensc\pkcs15-pubkey.c" />
+    <ClCompile Include="..\src\libopensc\pkcs15-sec.c" />
+    <ClCompile Include="..\src\libopensc\pkcs15-syn.c" />
+    <ClCompile Include="..\src\libopensc\pkcs15.c" />
+    <ClCompile Include="..\src\libopensc\reader-galss.c" />
+    <ClCompile Include="..\src\libopensc\reader-pcsc.c" />
+    <ClCompile Include="..\src\libopensc\sc.c" />
+    <ClCompile Include="..\src\libopensc\sec.c" />
+    <ClCompile Include="..\src\pkcs11\debug.c" />
+    <ClCompile Include="..\src\pkcs11\framework-pkcs15.c" />
+    <ClCompile Include="..\src\pkcs11\mechanism.c" />
+    <ClCompile Include="..\src\pkcs11\misc.c" />
+    <ClCompile Include="..\src\pkcs11\openssl.c" />
+    <ClCompile Include="..\src\pkcs11\pkcs11-display.c" />
+    <ClCompile Include="..\src\pkcs11\pkcs11-global.c" />
+    <ClCompile Include="..\src\pkcs11\pkcs11-object.c" />
+    <ClCompile Include="..\src\pkcs11\pkcs11-session.c" />
+    <ClCompile Include="..\src\pkcs11\pkcs11-spy.c" />
+    <ClCompile Include="..\src\pkcs11\secretkey.c" />
+    <ClCompile Include="..\src\pkcs11\slot.c" />
+    <ClCompile Include="..\src\scconf\parse.c" />
+    <ClCompile Include="..\src\scconf\scconf.c" />
+    <ClCompile Include="..\src\scconf\sclex.c" />
+    <ClCompile Include=".\src\system.c" />
+    <ClCompile Include="src\tls_chainlist.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\version.rc">
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\src</AdditionalIncludeDirectories>
+      <Culture Condition="'$(Configuration)|$(Platform)'=='Release|x64'">0x040c</Culture>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">_WIN64</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">_DEBUG</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\common\sys_config.h" />
+    <ClInclude Include="..\src\common\compat_strlcpy.h" />
+    <ClInclude Include="..\src\libopensc\asn1.h" />
+    <ClInclude Include="..\src\libopensc\card-cps.h" />
+    <ClInclude Include="..\src\libopensc\cards.h" />
+    <ClInclude Include="..\src\libopensc\encdec.h" />
+    <ClInclude Include="..\src\libopensc\errors.h" />
+    <ClInclude Include="..\src\libopensc\gal_err.h" />
+    <ClInclude Include="..\src\libopensc\internal-galssv3.h" />
+    <ClInclude Include="..\src\libopensc\internal-winscard.h" />
+    <ClInclude Include="..\src\libopensc\internal.h" />
+    <ClInclude Include="..\src\libopensc\log.h" />
+    <ClInclude Include="..\src\libopensc\opensc.h" />
+    <ClInclude Include="..\src\libopensc\opensc_conf.h" />
+    <ClInclude Include="..\src\libopensc\pkcs15.h" />
+    <ClInclude Include="..\src\libopensc\types.h" />
+    <ClInclude Include="..\src\pkcs11\pkcs11-display.h" />
+    <ClInclude Include="..\src\pkcs11\pkcs11-opensc.h" />
+    <ClInclude Include="..\src\pkcs11\pkcs11.h" />
+    <ClInclude Include="..\src\pkcs11\sc-pkcs11.h" />
+    <ClInclude Include="..\src\scconf\scconf.h" />
+    <ClInclude Include="..\src\scconf\scconf_internal.h" />
+    <ClInclude Include="src\cps3pkcs11ver.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

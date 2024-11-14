@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ASIP Sante\PKCS11]
+"Traces"=dword:00000001
+"Debug"=dword:0000000a
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ASIP Sante\CSP]
+"Traces"=dword:00000050

@@ -1,0 +1,743 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B3641812C0DF3AE0073B5ED /* card-cps.c in Sources */ = {isa = PBXBuildFile; fileRef = 1B36417E2C0DF3AE0073B5ED /* card-cps.c */; };
+		1B3641822C0DF3AE0073B5ED /* card-cps4.c in Sources */ = {isa = PBXBuildFile; fileRef = 1B36417F2C0DF3AE0073B5ED /* card-cps4.c */; };
+		1B3641832C0DF3AE0073B5ED /* card-cps.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B3641802C0DF3AE0073B5ED /* card-cps.h */; };
+		1BB28DB02331190A003392F7 /* internal-galssv3.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB28D5F2331190A003392F7 /* internal-galssv3.h */; };
+		1BB28DB12331190A003392F7 /* log.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D602331190A003392F7 /* log.c */; };
+		1BB28DB22331190A003392F7 /* encdec.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D612331190A003392F7 /* encdec.c */; };
+		1BB28DB32331190A003392F7 /* internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB28D622331190A003392F7 /* internal.h */; };
+		1BB28DB42331190A003392F7 /* card-cps3.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D632331190A003392F7 /* card-cps3.c */; };
+		1BB28DB52331190A003392F7 /* pkcs15.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB28D642331190A003392F7 /* pkcs15.h */; };
+		1BB28DB62331190A003392F7 /* pkcs15-prkey.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D652331190A003392F7 /* pkcs15-prkey.c */; };
+		1BB28DB72331190A003392F7 /* asn1.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB28D662331190A003392F7 /* asn1.h */; };
+		1BB28DB82331190A003392F7 /* pkcs15-cert.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D672331190A003392F7 /* pkcs15-cert.c */; };
+		1BB28DB92331190A003392F7 /* types.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB28D682331190A003392F7 /* types.h */; };
+		1BB28DBA2331190A003392F7 /* pkcs15-pin.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D692331190A003392F7 /* pkcs15-pin.c */; };
+		1BB28DBB2331190A003392F7 /* reader-galss.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D6A2331190A003392F7 /* reader-galss.c */; };
+		1BB28DBC2331190A003392F7 /* errors.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB28D6B2331190A003392F7 /* errors.h */; };
+		1BB28DBD2331190A003392F7 /* padding.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D6C2331190A003392F7 /* padding.c */; };
+		1BB28DBE2331190A003392F7 /* sc.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D6D2331190A003392F7 /* sc.c */; };
+		1BB28DBF2331190A003392F7 /* ctx.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D6E2331190A003392F7 /* ctx.c */; };
+		1BB28DC02331190A003392F7 /* dir.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D6F2331190A003392F7 /* dir.c */; };
+		1BB28DC12331190A003392F7 /* opensc.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB28D702331190A003392F7 /* opensc.h */; };
+		1BB28DC22331190A003392F7 /* apdu.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D712331190A003392F7 /* apdu.c */; };
+		1BB28DC32331190A003392F7 /* pkcs15-sec.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D722331190A003392F7 /* pkcs15-sec.c */; };
+		1BB28DC42331190A003392F7 /* opensc_conf.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB28D732331190A003392F7 /* opensc_conf.h */; };
+		1BB28DC52331190A003392F7 /* sec.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D742331190A003392F7 /* sec.c */; };
+		1BB28DC62331190A003392F7 /* encdec.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB28D752331190A003392F7 /* encdec.h */; };
+		1BB28DC72331190A003392F7 /* pkcs15-pubkey.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D762331190A003392F7 /* pkcs15-pubkey.c */; };
+		1BB28DC82331190A003392F7 /* iso7816.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D772331190A003392F7 /* iso7816.c */; };
+		1BB28DC92331190A003392F7 /* log.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB28D782331190A003392F7 /* log.h */; };
+		1BB28DCA2331190A003392F7 /* card.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D792331190A003392F7 /* card.c */; };
+		1BB28DCB2331190A003392F7 /* asn1.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D7A2331190A003392F7 /* asn1.c */; };
+		1BB28DCC2331190A003392F7 /* pkcs15.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D7B2331190A003392F7 /* pkcs15.c */; };
+		1BB28DCD2331190A003392F7 /* internal-winscard.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB28D7C2331190A003392F7 /* internal-winscard.h */; };
+		1BB28DCE2331190A003392F7 /* pkcs15-syn.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D7D2331190A003392F7 /* pkcs15-syn.c */; };
+		1BB28DCF2331190A003392F7 /* cards.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB28D7E2331190A003392F7 /* cards.h */; };
+		1BB28DD02331190A003392F7 /* pkcs15-data.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D7F2331190A003392F7 /* pkcs15-data.c */; };
+		1BB28DD12331190A003392F7 /* pkcs15-algo.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D802331190A003392F7 /* pkcs15-algo.c */; };
+		1BB28DD22331190A003392F7 /* reader-pcsc.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D812331190A003392F7 /* reader-pcsc.c */; };
+		1BB28DD32331190A003392F7 /* errors.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D822331190A003392F7 /* errors.c */; };
+		1BB28DD42331190A003392F7 /* gal_err.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB28D832331190A003392F7 /* gal_err.h */; };
+		1BB28DD52331190A003392F7 /* pkcs15-cache.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D842331190A003392F7 /* pkcs15-cache.c */; };
+		1BB28DDA2331190A003392F7 /* compat_strlcpy.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D8B2331190A003392F7 /* compat_strlcpy.c */; };
+		1BB28DDB2331190A003392F7 /* compat_strlcpy.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB28D8C2331190A003392F7 /* compat_strlcpy.h */; };
+		1BB28DDC2331190A003392F7 /* pkcs11.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB28D8E2331190A003392F7 /* pkcs11.h */; };
+		1BB28DDD2331190A003392F7 /* pkcs11-display.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB28D8F2331190A003392F7 /* pkcs11-display.h */; };
+		1BB28DDE2331190A003392F7 /* framework-pkcs15.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D902331190A003392F7 /* framework-pkcs15.c */; };
+		1BB28DDF2331190A003392F7 /* sc-pkcs11.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB28D912331190A003392F7 /* sc-pkcs11.h */; };
+		1BB28DE02331190A003392F7 /* pkcs11-global.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D922331190A003392F7 /* pkcs11-global.c */; };
+		1BB28DE12331190A003392F7 /* slot.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D932331190A003392F7 /* slot.c */; };
+		1BB28DE22331190A003392F7 /* debug.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D942331190A003392F7 /* debug.c */; };
+		1BB28DE32331190A003392F7 /* pkcs11-object.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D952331190A003392F7 /* pkcs11-object.c */; };
+		1BB28DE42331190A003392F7 /* pkcs11-spy.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D962331190A003392F7 /* pkcs11-spy.c */; };
+		1BB28DE52331190A003392F7 /* mechanism.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D972331190A003392F7 /* mechanism.c */; };
+		1BB28DE62331190A003392F7 /* openssl.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D982331190A003392F7 /* openssl.c */; };
+		1BB28DE72331190A003392F7 /* pkcs11-opensc.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB28D992331190A003392F7 /* pkcs11-opensc.h */; };
+		1BB28DE82331190A003392F7 /* pkcs11-display.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D9A2331190A003392F7 /* pkcs11-display.c */; };
+		1BB28DE92331190A003392F7 /* misc.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D9B2331190A003392F7 /* misc.c */; };
+		1BB28DEA2331190A003392F7 /* pkcs11-session.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D9C2331190A003392F7 /* pkcs11-session.c */; };
+		1BB28DEB2331190A003392F7 /* secretkey.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28D9D2331190A003392F7 /* secretkey.c */; };
+		1BB28DF02331190A003392F7 /* sclex.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28DA62331190A003392F7 /* sclex.c */; };
+		1BB28DF12331190A003392F7 /* scconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB28DA72331190A003392F7 /* scconf.h */; };
+		1BB28DF22331190A003392F7 /* parse.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28DA82331190A003392F7 /* parse.c */; };
+		1BB28DF32331190A003392F7 /* scconf_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB28DA92331190A003392F7 /* scconf_internal.h */; };
+		1BB28DF42331190A003392F7 /* scconf.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28DAA2331190A003392F7 /* scconf.c */; };
+		1BB28DF52331190A003392F7 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB28DAD2331190A003392F7 /* config.h */; };
+		1BB28DF62331190A003392F7 /* system.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28DAE2331190A003392F7 /* system.c */; };
+		1BB28DF72331190A003392F7 /* cps3pkcs11ver.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB28DAF2331190A003392F7 /* cps3pkcs11ver.h */; };
+		1BB28DFC23311CA3003392F7 /* sysdef.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB28DF923311CA3003392F7 /* sysdef.h */; };
+		1BB28DFD23311CA3003392F7 /* sys_config.c in Sources */ = {isa = PBXBuildFile; fileRef = 1BB28DFA23311CA3003392F7 /* sys_config.c */; };
+		1BB28DFE23311CA3003392F7 /* sys_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB28DFB23311CA3003392F7 /* sys_config.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B36417E2C0DF3AE0073B5ED /* card-cps.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "card-cps.c"; sourceTree = "<group>"; };
+		1B36417F2C0DF3AE0073B5ED /* card-cps4.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "card-cps4.c"; sourceTree = "<group>"; };
+		1B3641802C0DF3AE0073B5ED /* card-cps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "card-cps.h"; sourceTree = "<group>"; };
+		1BB28D5F2331190A003392F7 /* internal-galssv3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "internal-galssv3.h"; sourceTree = "<group>"; };
+		1BB28D602331190A003392F7 /* log.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = log.c; sourceTree = "<group>"; };
+		1BB28D612331190A003392F7 /* encdec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = encdec.c; sourceTree = "<group>"; };
+		1BB28D622331190A003392F7 /* internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = internal.h; sourceTree = "<group>"; };
+		1BB28D632331190A003392F7 /* card-cps3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "card-cps3.c"; sourceTree = "<group>"; };
+		1BB28D642331190A003392F7 /* pkcs15.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs15.h; sourceTree = "<group>"; };
+		1BB28D652331190A003392F7 /* pkcs15-prkey.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "pkcs15-prkey.c"; sourceTree = "<group>"; };
+		1BB28D662331190A003392F7 /* asn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1.h; sourceTree = "<group>"; };
+		1BB28D672331190A003392F7 /* pkcs15-cert.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "pkcs15-cert.c"; sourceTree = "<group>"; };
+		1BB28D682331190A003392F7 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		1BB28D692331190A003392F7 /* pkcs15-pin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "pkcs15-pin.c"; sourceTree = "<group>"; };
+		1BB28D6A2331190A003392F7 /* reader-galss.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "reader-galss.c"; sourceTree = "<group>"; };
+		1BB28D6B2331190A003392F7 /* errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = errors.h; sourceTree = "<group>"; };
+		1BB28D6C2331190A003392F7 /* padding.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = padding.c; sourceTree = "<group>"; };
+		1BB28D6D2331190A003392F7 /* sc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sc.c; sourceTree = "<group>"; };
+		1BB28D6E2331190A003392F7 /* ctx.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ctx.c; sourceTree = "<group>"; };
+		1BB28D6F2331190A003392F7 /* dir.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = dir.c; sourceTree = "<group>"; };
+		1BB28D702331190A003392F7 /* opensc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opensc.h; sourceTree = "<group>"; };
+		1BB28D712331190A003392F7 /* apdu.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = apdu.c; sourceTree = "<group>"; };
+		1BB28D722331190A003392F7 /* pkcs15-sec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "pkcs15-sec.c"; sourceTree = "<group>"; };
+		1BB28D732331190A003392F7 /* opensc_conf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opensc_conf.h; sourceTree = "<group>"; };
+		1BB28D742331190A003392F7 /* sec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sec.c; sourceTree = "<group>"; };
+		1BB28D752331190A003392F7 /* encdec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encdec.h; sourceTree = "<group>"; };
+		1BB28D762331190A003392F7 /* pkcs15-pubkey.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "pkcs15-pubkey.c"; sourceTree = "<group>"; };
+		1BB28D772331190A003392F7 /* iso7816.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iso7816.c; sourceTree = "<group>"; };
+		1BB28D782331190A003392F7 /* log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log.h; sourceTree = "<group>"; };
+		1BB28D792331190A003392F7 /* card.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = card.c; sourceTree = "<group>"; };
+		1BB28D7A2331190A003392F7 /* asn1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = asn1.c; sourceTree = "<group>"; };
+		1BB28D7B2331190A003392F7 /* pkcs15.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pkcs15.c; sourceTree = "<group>"; };
+		1BB28D7C2331190A003392F7 /* internal-winscard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "internal-winscard.h"; sourceTree = "<group>"; };
+		1BB28D7D2331190A003392F7 /* pkcs15-syn.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "pkcs15-syn.c"; sourceTree = "<group>"; };
+		1BB28D7E2331190A003392F7 /* cards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cards.h; sourceTree = "<group>"; };
+		1BB28D7F2331190A003392F7 /* pkcs15-data.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "pkcs15-data.c"; sourceTree = "<group>"; };
+		1BB28D802331190A003392F7 /* pkcs15-algo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "pkcs15-algo.c"; sourceTree = "<group>"; };
+		1BB28D812331190A003392F7 /* reader-pcsc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "reader-pcsc.c"; sourceTree = "<group>"; };
+		1BB28D822331190A003392F7 /* errors.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = errors.c; sourceTree = "<group>"; };
+		1BB28D832331190A003392F7 /* gal_err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gal_err.h; sourceTree = "<group>"; };
+		1BB28D842331190A003392F7 /* pkcs15-cache.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "pkcs15-cache.c"; sourceTree = "<group>"; };
+		1BB28D8B2331190A003392F7 /* compat_strlcpy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = compat_strlcpy.c; sourceTree = "<group>"; };
+		1BB28D8C2331190A003392F7 /* compat_strlcpy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compat_strlcpy.h; sourceTree = "<group>"; };
+		1BB28D8E2331190A003392F7 /* pkcs11.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs11.h; sourceTree = "<group>"; };
+		1BB28D8F2331190A003392F7 /* pkcs11-display.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pkcs11-display.h"; sourceTree = "<group>"; };
+		1BB28D902331190A003392F7 /* framework-pkcs15.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "framework-pkcs15.c"; sourceTree = "<group>"; };
+		1BB28D912331190A003392F7 /* sc-pkcs11.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "sc-pkcs11.h"; sourceTree = "<group>"; };
+		1BB28D922331190A003392F7 /* pkcs11-global.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "pkcs11-global.c"; sourceTree = "<group>"; };
+		1BB28D932331190A003392F7 /* slot.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = slot.c; sourceTree = "<group>"; };
+		1BB28D942331190A003392F7 /* debug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = debug.c; sourceTree = "<group>"; };
+		1BB28D952331190A003392F7 /* pkcs11-object.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "pkcs11-object.c"; sourceTree = "<group>"; };
+		1BB28D962331190A003392F7 /* pkcs11-spy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "pkcs11-spy.c"; sourceTree = "<group>"; };
+		1BB28D972331190A003392F7 /* mechanism.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mechanism.c; sourceTree = "<group>"; };
+		1BB28D982331190A003392F7 /* openssl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = openssl.c; sourceTree = "<group>"; };
+		1BB28D992331190A003392F7 /* pkcs11-opensc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pkcs11-opensc.h"; sourceTree = "<group>"; };
+		1BB28D9A2331190A003392F7 /* pkcs11-display.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "pkcs11-display.c"; sourceTree = "<group>"; };
+		1BB28D9B2331190A003392F7 /* misc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = misc.c; sourceTree = "<group>"; };
+		1BB28D9C2331190A003392F7 /* pkcs11-session.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "pkcs11-session.c"; sourceTree = "<group>"; };
+		1BB28D9D2331190A003392F7 /* secretkey.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = secretkey.c; sourceTree = "<group>"; };
+		1BB28DA62331190A003392F7 /* sclex.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sclex.c; sourceTree = "<group>"; };
+		1BB28DA72331190A003392F7 /* scconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scconf.h; sourceTree = "<group>"; };
+		1BB28DA82331190A003392F7 /* parse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parse.c; sourceTree = "<group>"; };
+		1BB28DA92331190A003392F7 /* scconf_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scconf_internal.h; sourceTree = "<group>"; };
+		1BB28DAA2331190A003392F7 /* scconf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scconf.c; sourceTree = "<group>"; };
+		1BB28DAD2331190A003392F7 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		1BB28DAE2331190A003392F7 /* system.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = system.c; sourceTree = "<group>"; };
+		1BB28DAF2331190A003392F7 /* cps3pkcs11ver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cps3pkcs11ver.h; sourceTree = "<group>"; };
+		1BB28DF923311CA3003392F7 /* sysdef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sysdef.h; sourceTree = "<group>"; };
+		1BB28DFA23311CA3003392F7 /* sys_config.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sys_config.c; sourceTree = "<group>"; };
+		1BB28DFB23311CA3003392F7 /* sys_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sys_config.h; sourceTree = "<group>"; };
+		1BDCC74F233101310068C64B /* libcps3_pkcs11_osx.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libcps3_pkcs11_osx.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BDCC74D233101310068C64B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BB28D5D2331190A003392F7 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				1BB28D5E2331190A003392F7 /* libopensc */,
+				1BB28D8A2331190A003392F7 /* common */,
+				1BB28D8D2331190A003392F7 /* pkcs11 */,
+				1BB28DA52331190A003392F7 /* scconf */,
+			);
+			name = src;
+			path = ../src;
+			sourceTree = "<group>";
+		};
+		1BB28D5E2331190A003392F7 /* libopensc */ = {
+			isa = PBXGroup;
+			children = (
+				1B36417E2C0DF3AE0073B5ED /* card-cps.c */,
+				1B3641802C0DF3AE0073B5ED /* card-cps.h */,
+				1B36417F2C0DF3AE0073B5ED /* card-cps4.c */,
+				1BB28D712331190A003392F7 /* apdu.c */,
+				1BB28D7A2331190A003392F7 /* asn1.c */,
+				1BB28D632331190A003392F7 /* card-cps3.c */,
+				1BB28D792331190A003392F7 /* card.c */,
+				1BB28D6E2331190A003392F7 /* ctx.c */,
+				1BB28D6F2331190A003392F7 /* dir.c */,
+				1BB28D612331190A003392F7 /* encdec.c */,
+				1BB28D822331190A003392F7 /* errors.c */,
+				1BB28D772331190A003392F7 /* iso7816.c */,
+				1BB28D602331190A003392F7 /* log.c */,
+				1BB28D6C2331190A003392F7 /* padding.c */,
+				1BB28D802331190A003392F7 /* pkcs15-algo.c */,
+				1BB28D842331190A003392F7 /* pkcs15-cache.c */,
+				1BB28D672331190A003392F7 /* pkcs15-cert.c */,
+				1BB28D7F2331190A003392F7 /* pkcs15-data.c */,
+				1BB28D692331190A003392F7 /* pkcs15-pin.c */,
+				1BB28D652331190A003392F7 /* pkcs15-prkey.c */,
+				1BB28D762331190A003392F7 /* pkcs15-pubkey.c */,
+				1BB28D722331190A003392F7 /* pkcs15-sec.c */,
+				1BB28D7D2331190A003392F7 /* pkcs15-syn.c */,
+				1BB28D7B2331190A003392F7 /* pkcs15.c */,
+				1BB28D6A2331190A003392F7 /* reader-galss.c */,
+				1BB28D812331190A003392F7 /* reader-pcsc.c */,
+				1BB28D6D2331190A003392F7 /* sc.c */,
+				1BB28D742331190A003392F7 /* sec.c */,
+				1BB28D662331190A003392F7 /* asn1.h */,
+				1BB28D7E2331190A003392F7 /* cards.h */,
+				1BB28D752331190A003392F7 /* encdec.h */,
+				1BB28D6B2331190A003392F7 /* errors.h */,
+				1BB28D832331190A003392F7 /* gal_err.h */,
+				1BB28D5F2331190A003392F7 /* internal-galssv3.h */,
+				1BB28D7C2331190A003392F7 /* internal-winscard.h */,
+				1BB28D622331190A003392F7 /* internal.h */,
+				1BB28D782331190A003392F7 /* log.h */,
+				1BB28D732331190A003392F7 /* opensc_conf.h */,
+				1BB28D702331190A003392F7 /* opensc.h */,
+				1BB28D642331190A003392F7 /* pkcs15.h */,
+				1BB28D682331190A003392F7 /* types.h */,
+			);
+			path = libopensc;
+			sourceTree = "<group>";
+		};
+		1BB28D8A2331190A003392F7 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				1BB28D8B2331190A003392F7 /* compat_strlcpy.c */,
+				1BB28D8C2331190A003392F7 /* compat_strlcpy.h */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		1BB28D8D2331190A003392F7 /* pkcs11 */ = {
+			isa = PBXGroup;
+			children = (
+				1BB28D942331190A003392F7 /* debug.c */,
+				1BB28D902331190A003392F7 /* framework-pkcs15.c */,
+				1BB28D972331190A003392F7 /* mechanism.c */,
+				1BB28D9B2331190A003392F7 /* misc.c */,
+				1BB28D982331190A003392F7 /* openssl.c */,
+				1BB28D9A2331190A003392F7 /* pkcs11-display.c */,
+				1BB28D922331190A003392F7 /* pkcs11-global.c */,
+				1BB28D952331190A003392F7 /* pkcs11-object.c */,
+				1BB28D9C2331190A003392F7 /* pkcs11-session.c */,
+				1BB28D962331190A003392F7 /* pkcs11-spy.c */,
+				1BB28D9D2331190A003392F7 /* secretkey.c */,
+				1BB28D932331190A003392F7 /* slot.c */,
+				1BB28D8F2331190A003392F7 /* pkcs11-display.h */,
+				1BB28D992331190A003392F7 /* pkcs11-opensc.h */,
+				1BB28D8E2331190A003392F7 /* pkcs11.h */,
+				1BB28D912331190A003392F7 /* sc-pkcs11.h */,
+			);
+			path = pkcs11;
+			sourceTree = "<group>";
+		};
+		1BB28DA52331190A003392F7 /* scconf */ = {
+			isa = PBXGroup;
+			children = (
+				1BB28DA62331190A003392F7 /* sclex.c */,
+				1BB28DA72331190A003392F7 /* scconf.h */,
+				1BB28DA82331190A003392F7 /* parse.c */,
+				1BB28DA92331190A003392F7 /* scconf_internal.h */,
+				1BB28DAA2331190A003392F7 /* scconf.c */,
+			);
+			path = scconf;
+			sourceTree = "<group>";
+		};
+		1BB28DAB2331190A003392F7 /* unix */ = {
+			isa = PBXGroup;
+			children = (
+				1BB28DAC2331190A003392F7 /* src */,
+			);
+			name = unix;
+			path = ../unix;
+			sourceTree = "<group>";
+		};
+		1BB28DAC2331190A003392F7 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				1BB28DAD2331190A003392F7 /* config.h */,
+				1BB28DAE2331190A003392F7 /* system.c */,
+				1BB28DAF2331190A003392F7 /* cps3pkcs11ver.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		1BB28DF823311CA3003392F7 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				1BB28DF923311CA3003392F7 /* sysdef.h */,
+				1BB28DFA23311CA3003392F7 /* sys_config.c */,
+				1BB28DFB23311CA3003392F7 /* sys_config.h */,
+			);
+			name = common;
+			path = ../../../common;
+			sourceTree = "<group>";
+		};
+		1BDCC746233101310068C64B = {
+			isa = PBXGroup;
+			children = (
+				1BB28DF823311CA3003392F7 /* common */,
+				1BB28D5D2331190A003392F7 /* src */,
+				1BB28DAB2331190A003392F7 /* unix */,
+				1BDCC750233101310068C64B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1BDCC750233101310068C64B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BDCC74F233101310068C64B /* libcps3_pkcs11_osx.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1BDCC74B233101310068C64B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BB28DF72331190A003392F7 /* cps3pkcs11ver.h in Headers */,
+				1BB28DC42331190A003392F7 /* opensc_conf.h in Headers */,
+				1BB28DF32331190A003392F7 /* scconf_internal.h in Headers */,
+				1BB28DF12331190A003392F7 /* scconf.h in Headers */,
+				1BB28DE72331190A003392F7 /* pkcs11-opensc.h in Headers */,
+				1BB28DD42331190A003392F7 /* gal_err.h in Headers */,
+				1BB28DFE23311CA3003392F7 /* sys_config.h in Headers */,
+				1BB28DB02331190A003392F7 /* internal-galssv3.h in Headers */,
+				1BB28DB32331190A003392F7 /* internal.h in Headers */,
+				1BB28DCD2331190A003392F7 /* internal-winscard.h in Headers */,
+				1BB28DB52331190A003392F7 /* pkcs15.h in Headers */,
+				1BB28DB92331190A003392F7 /* types.h in Headers */,
+				1BB28DFC23311CA3003392F7 /* sysdef.h in Headers */,
+				1BB28DCF2331190A003392F7 /* cards.h in Headers */,
+				1BB28DDB2331190A003392F7 /* compat_strlcpy.h in Headers */,
+				1BB28DC12331190A003392F7 /* opensc.h in Headers */,
+				1BB28DDC2331190A003392F7 /* pkcs11.h in Headers */,
+				1BB28DB72331190A003392F7 /* asn1.h in Headers */,
+				1BB28DDF2331190A003392F7 /* sc-pkcs11.h in Headers */,
+				1BB28DDD2331190A003392F7 /* pkcs11-display.h in Headers */,
+				1BB28DF52331190A003392F7 /* config.h in Headers */,
+				1BB28DC92331190A003392F7 /* log.h in Headers */,
+				1BB28DBC2331190A003392F7 /* errors.h in Headers */,
+				1B3641832C0DF3AE0073B5ED /* card-cps.h in Headers */,
+				1BB28DC62331190A003392F7 /* encdec.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1BDCC74E233101310068C64B /* cps3_pkcs11_osx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BDCC753233101310068C64B /* Build configuration list for PBXNativeTarget "cps3_pkcs11_osx" */;
+			buildPhases = (
+				1BDCC74B233101310068C64B /* Headers */,
+				1BDCC74C233101310068C64B /* Sources */,
+				1BDCC74D233101310068C64B /* Frameworks */,
+				1BB28E0023312697003392F7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cps3_pkcs11_osx;
+			productName = cps3_pkcs11_osx;
+			productReference = 1BDCC74F233101310068C64B /* libcps3_pkcs11_osx.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BDCC747233101310068C64B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = ANS;
+				TargetAttributes = {
+					1BDCC74E233101310068C64B = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 1BDCC74A233101310068C64B /* Build configuration list for PBXProject "cps3_pkcs11_osx" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1BDCC746233101310068C64B;
+			productRefGroup = 1BDCC750233101310068C64B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BDCC74E233101310068C64B /* cps3_pkcs11_osx */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BB28E0023312697003392F7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncd $BUILT_PRODUCTS_DIR\ntest -f ./$EXECUTABLE_NAME.tar.gz && rm ./$EXECUTABLE_NAME.tar.gz && echo \"$EXECUTABLE_NAME.tar.gz removed\"\ntar cvfz ./$EXECUTABLE_NAME.tar.gz ./$EXECUTABLE_NAME && echo \"$EXECUTABLE_NAME.tar.gz created\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BDCC74C233101310068C64B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BB28DF22331190A003392F7 /* parse.c in Sources */,
+				1BB28DFD23311CA3003392F7 /* sys_config.c in Sources */,
+				1BB28DC02331190A003392F7 /* dir.c in Sources */,
+				1BB28DB12331190A003392F7 /* log.c in Sources */,
+				1BB28DCB2331190A003392F7 /* asn1.c in Sources */,
+				1BB28DD52331190A003392F7 /* pkcs15-cache.c in Sources */,
+				1BB28DBD2331190A003392F7 /* padding.c in Sources */,
+				1BB28DD02331190A003392F7 /* pkcs15-data.c in Sources */,
+				1BB28DBE2331190A003392F7 /* sc.c in Sources */,
+				1BB28DB82331190A003392F7 /* pkcs15-cert.c in Sources */,
+				1BB28DCA2331190A003392F7 /* card.c in Sources */,
+				1B3641822C0DF3AE0073B5ED /* card-cps4.c in Sources */,
+				1BB28DEA2331190A003392F7 /* pkcs11-session.c in Sources */,
+				1BB28DE82331190A003392F7 /* pkcs11-display.c in Sources */,
+				1BB28DD22331190A003392F7 /* reader-pcsc.c in Sources */,
+				1BB28DCC2331190A003392F7 /* pkcs15.c in Sources */,
+				1BB28DD12331190A003392F7 /* pkcs15-algo.c in Sources */,
+				1BB28DE92331190A003392F7 /* misc.c in Sources */,
+				1BB28DF62331190A003392F7 /* system.c in Sources */,
+				1BB28DE32331190A003392F7 /* pkcs11-object.c in Sources */,
+				1BB28DC22331190A003392F7 /* apdu.c in Sources */,
+				1BB28DC32331190A003392F7 /* pkcs15-sec.c in Sources */,
+				1BB28DB22331190A003392F7 /* encdec.c in Sources */,
+				1BB28DE52331190A003392F7 /* mechanism.c in Sources */,
+				1BB28DDA2331190A003392F7 /* compat_strlcpy.c in Sources */,
+				1BB28DE12331190A003392F7 /* slot.c in Sources */,
+				1BB28DB62331190A003392F7 /* pkcs15-prkey.c in Sources */,
+				1BB28DE42331190A003392F7 /* pkcs11-spy.c in Sources */,
+				1BB28DC52331190A003392F7 /* sec.c in Sources */,
+				1BB28DBA2331190A003392F7 /* pkcs15-pin.c in Sources */,
+				1BB28DF42331190A003392F7 /* scconf.c in Sources */,
+				1BB28DC82331190A003392F7 /* iso7816.c in Sources */,
+				1BB28DDE2331190A003392F7 /* framework-pkcs15.c in Sources */,
+				1BB28DCE2331190A003392F7 /* pkcs15-syn.c in Sources */,
+				1BB28DB42331190A003392F7 /* card-cps3.c in Sources */,
+				1BB28DE02331190A003392F7 /* pkcs11-global.c in Sources */,
+				1BB28DBB2331190A003392F7 /* reader-galss.c in Sources */,
+				1B3641812C0DF3AE0073B5ED /* card-cps.c in Sources */,
+				1BB28DBF2331190A003392F7 /* ctx.c in Sources */,
+				1BB28DEB2331190A003392F7 /* secretkey.c in Sources */,
+				1BB28DD32331190A003392F7 /* errors.c in Sources */,
+				1BB28DC72331190A003392F7 /* pkcs15-pubkey.c in Sources */,
+				1BB28DF02331190A003392F7 /* sclex.c in Sources */,
+				1BB28DE62331190A003392F7 /* openssl.c in Sources */,
+				1BB28DE22331190A003392F7 /* debug.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1BDCC751233101310068C64B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 2BN4JAE2LL;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1BDCC752233101310068C64B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 2BN4JAE2LL;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1BDCC754233101310068C64B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				EXPORTED_SYMBOLS_FILE = cps3_pkcs11.exp;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = ../../openssl/lib_mac;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DHAVE_CONFIG_H",
+					"-DENABLE_OPENSSL",
+					"-DPKCS11_THREAD_LOCKING",
+					"-DHAVE_STRLCPY",
+					"-D_MACOS_PKCS11_",
+					"-DENABLE_GALSS",
+					"-DNDEBUG",
+				);
+				OTHER_LDFLAGS = (
+					"-lcrypto-0.9.8n",
+					"-ld_classic",
+					"-Wl",
+				);
+				"OTHER_LDFLAGS[arch=arm64]" = (
+					"-lcrypto-arm64",
+					"-lz",
+					"-headerpad_max_install_names",
+				);
+				"OTHER_LDFLAGS[arch=x86_64]" = (
+					"-lcrypto-0.9.8n",
+					"-headerpad_max_install_names",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../../../common",
+					"$(PROJECT_DIR)/../src",
+					"$(PROJECT_DIR)/../src/libopensc",
+					"$(PROJECT_DIR)/../unix/src",
+					"$(PROJECT_DIR)/../../openssl/include",
+					"$(PROJECT_DIR)/../../openssl/include_mac",
+				);
+				USER_HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../../openssl/include",
+					"$(PROJECT_DIR)/../../openssl/include_mac",
+					"$(PROJECT_DIR)/../../../common",
+					"$(PROJECT_DIR)/../src",
+					"$(PROJECT_DIR)/../src/libopensc",
+					"$(PROJECT_DIR)/../unix/src",
+				);
+			};
+			name = Debug;
+		};
+		1BDCC755233101310068C64B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				EXPORTED_SYMBOLS_FILE = cps3_pkcs11.exp;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = ../../openssl/lib_mac;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-DHAVE_CONFIG_H",
+					"-DENABLE_OPENSSL",
+					"-DPKCS11_THREAD_LOCKING",
+					"-DHAVE_STRLCPY",
+					"-D_MACOS_PKCS11_",
+					"-DENABLE_GALSS",
+				);
+				OTHER_LDFLAGS = (
+					"-lcrypto-0.9.8n",
+					"-ld_classic",
+				);
+				"OTHER_LDFLAGS[arch=arm64]" = (
+					"-lcrypto-arm64",
+					"-lz",
+					"-headerpad_max_install_names",
+				);
+				"OTHER_LDFLAGS[arch=x86_64]" = (
+					"-lcrypto-0.9.8n",
+					"-headerpad_max_install_names",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../../../common",
+					"$(PROJECT_DIR)/../src",
+					"$(PROJECT_DIR)/../src/libopensc",
+					"$(PROJECT_DIR)/../unix/src",
+					"$(PROJECT_DIR)/../../openssl/include",
+					"$(PROJECT_DIR)/../../openssl/include_mac",
+				);
+				USER_HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../../openssl/include",
+					"$(PROJECT_DIR)/../../openssl/include_mac",
+					"$(PROJECT_DIR)/../../../common",
+					"$(PROJECT_DIR)/../src",
+					"$(PROJECT_DIR)/../src/libopensc",
+					"$(PROJECT_DIR)/../unix/src",
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BDCC74A233101310068C64B /* Build configuration list for PBXProject "cps3_pkcs11_osx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BDCC751233101310068C64B /* Debug */,
+				1BDCC752233101310068C64B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BDCC753233101310068C64B /* Build configuration list for PBXNativeTarget "cps3_pkcs11_osx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BDCC754233101310068C64B /* Debug */,
+				1BDCC755233101310068C64B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BDCC747233101310068C64B /* Project object */;
+}

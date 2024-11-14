@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ASIP Sante\PKCS11]
+"Traces"=-
+"Debug"=-
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ASIP Sante\CSP]
+"Traces"=-

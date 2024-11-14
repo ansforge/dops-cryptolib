@@ -1,0 +1,68 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgray\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 anspsc@MacBook-Pro-de-Laurent CryptolibCPS-5.2.0-to_sign % ./sign-5.2.0.sh\
+\
+----------------------------------------------------------------------------\
+ Processus de signature et de cr\'e9ation du dmg\
+----------------------------------------------------------------------------\
+\
+- ./CryptolibCPS-5.2.0.dmg supprim\'e9\
+------------ Recherche du package \'e0 signer...\
+------------ ./CryptolibCPS-5.2.0-unsigned.pkg trouv\'e9\
+\
+------------ Signature du package : ./CryptolibCPS-5.2.0-unsigned.pkg...\
+productsign --timestamp --sign Developer ID Installer ./CryptolibCPS-5.2.0-unsigned.pkg ./CryptolibCPS-5.2.0.pkg\
+productsign: using timestamp authority for signature\
+productsign: signing product with identity "Developer ID Installer: AGENCE DU NUMERIQUE EN SANTE (Y8WQ8FQ7KH)" from keychain /Users/anspsc/Library/Keychains/login.keychain-db\
+productsign: adding certificate "Developer ID Certification Authority"\
+productsign: adding certificate "Apple Root CA"\
+productsign: Wrote signed product archive to ./CryptolibCPS-5.2.0.pkg\
+\
+------------ Validation de la signature du package : ./CryptolibCPS-5.2.0.pkg\
+Package "CryptolibCPS-5.2.0.pkg":\
+   Status: signed by a developer certificate issued by Apple for distribution\
+   Signed with a trusted timestamp on: 2024-07-03 09:40:56 +0000\
+   Certificate Chain:\
+    1. Developer ID Installer: AGENCE DU NUMERIQUE EN SANTE (Y8WQ8FQ7KH)\
+       Expires: 2027-02-01 22:12:15 +0000\
+       SHA256 Fingerprint:\
+           3D 4C EA E5 46 9F E5 A8 C1 4C B3 8F 0C 9E C1 73 E9 E0 DB 65 C1 28 \
+           5E F9 81 FC C4 CB 44 4E 86 E2\
+       ------------------------------------------------------------------------\
+    2. Developer ID Certification Authority\
+       Expires: 2027-02-01 22:12:15 +0000\
+       SHA256 Fingerprint:\
+           7A FC 9D 01 A6 2F 03 A2 DE 96 37 93 6D 4A FE 68 09 0D 2D E1 8D 03 \
+           F2 9C 88 CF B0 B1 BA 63 58 7F\
+       ------------------------------------------------------------------------\
+    3. Apple Root CA\
+       Expires: 2035-02-09 21:40:36 +0000\
+       SHA256 Fingerprint:\
+           B0 B1 73 0E CB C7 FF 45 05 14 2C 49 F1 29 5E 6E DA 6B CA ED 7E 2C \
+           68 C5 BE 91 B5 A1 10 01 F0 24\
+\
+\
+------------ Notarisation du package : ./CryptolibCPS-5.2.0.pkg...\
+Conducting pre-submission checks for CryptolibCPS-5.2.0.pkg and initiating connection to the Apple notary service...\
+Submission ID received\
+  id: 8ff2e78f-6994-4018-98c3-3f66763c07da\
+Successfully uploaded file\
+  id: 8ff2e78f-6994-4018-98c3-3f66763c07da\
+  path: /Users/anspsc/Documents/Installeurs/v5.2.0/CryptolibCPS-5.2.0-to_sign/CryptolibCPS-5.2.0.pkg\
+Waiting for processing to complete.\
+Current status: Accepted.......\
+Processing complete\
+  id: 8ff2e78f-6994-4018-98c3-3f66763c07da\
+  status: Accepted\
+\
+------------ Creation du DMG : ./CryptolibCPS-5.2.0.dmg...\
+............................\
+created: /Users/anspsc/Documents/Installeurs/v5.2.0/CryptolibCPS-5.2.0-to_sign/CryptolibCPS-5.2.0.dmg\
+\
+------------ SHA1 du DMG : ./CryptolibCPS-5.2.0.dmg...\
+anspsc@MacBook-Pro-de-Laurent CryptolibCPS-5.2.0-to_sign % }
