@@ -1,5 +1,0 @@
-[ASIP_RPM_release]
-name=ASIP_RPM_release
-baseurl=https://www.outil-diagnostic.asipsante.fr/RPM/release/
-enabled=1
-gpgcheck=0
